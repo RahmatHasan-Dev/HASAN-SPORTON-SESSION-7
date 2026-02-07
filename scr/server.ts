@@ -23,7 +23,7 @@ if (!MONGO_URI || (!MONGO_URI.startsWith('mongodb://') && !MONGO_URI.startsWith(
   console.error('❌ Invalid or missing MONGO_URI environment variable.');
   if (MONGO_URI) console.error('Provided value (sanitized):', sanitizeUri(MONGO_URI));
   console.error('Expected connection string to start with "mongodb://" or "mongodb+srv://".');
-  console.error('Create a .env file with a line like: MONGO_URI=mongodb+srv://user:pass@cluster0.mongodb.net/mydb');
+  console.error('Create a .env file with a line like: MONGO_URI=');
   process.exit(1);
 }
 
